@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="176" id="KGk-i7-Jjw" customClass="RandomRecipesTableViewCell" customModule="Cookery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fso-G5-lg7">
+                        <rect key="frame" x="0.0" y="0.0" width="454" height="176"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-Fc-Jvb">
+                                <rect key="frame" x="0.0" y="0.0" width="454" height="176"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v44-A3-63g">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9AZ-Fc-Jvb" firstAttribute="top" secondItem="Fso-G5-lg7" secondAttribute="top" id="5uo-oq-qHW"/>
+                            <constraint firstItem="9AZ-Fc-Jvb" firstAttribute="leading" secondItem="Fso-G5-lg7" secondAttribute="leading" id="NUg-HJ-4NP"/>
+                            <constraint firstAttribute="bottom" secondItem="9AZ-Fc-Jvb" secondAttribute="bottom" id="a3k-NZ-yFi"/>
+                            <constraint firstAttribute="trailing" secondItem="9AZ-Fc-Jvb" secondAttribute="trailing" id="pkk-Fw-QLN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fso-G5-lg7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GJR-LP-Zab"/>
+                    <constraint firstAttribute="bottom" secondItem="Fso-G5-lg7" secondAttribute="bottom" id="IP2-0z-Pcl"/>
+                    <constraint firstItem="Fso-G5-lg7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cW3-Bh-60p"/>
+                    <constraint firstAttribute="trailing" secondItem="Fso-G5-lg7" secondAttribute="trailing" id="luE-8T-kHw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="9AZ-Fc-Jvb" id="F6s-eZ-OzP"/>
+            </connections>
+            <point key="canvasLocation" x="228.98550724637684" y="176.11607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
